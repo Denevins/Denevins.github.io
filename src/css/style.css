@@ -1,39 +1,76 @@
-
-body{
-    background-color: red;
-}
-
-
-/*
 .skills-item {
     display: flex;
     width: 40%;
 }
 
-.cases-title{
-   text-align: center
+.cases-title {
+    text-align: center;
 }
 
-.preview{
+.preview {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
-.about-ws{
+.about-ws {
     display: flex;
 }
 
-.about-item-1{
-    margin-left: 30%
+.about-item-1 {
+    margin-left: 30%;
 }
 
-.about-item-2{
+.about-item-2 {
     width: 30%;
     margin-left: 2%;
 }
 
-.site-bottom{
-    margin-left: 30%
+.site-button {
+    margin-left: 30%;
 }
-*/
+
+.statistics-item {
+    display: flex;
+    text-align: center;
+}
+
+.stat-item1 {
+    margin-left: 20%;
+}
+
+.stat-item2 {
+    margin-left: 5%;
+}
+
+.stat-item3 {
+    margin-left: 5%;
+}
+
+.stat-item4 {
+    margin-left: 5%;
+}
+
+.review-text {
+    text-align: center;
+    width: 20px;
+}
+
+.contact-item {
+    display: flex;
+}
+
+.contact-message{
+    width: 19%;
+    height: 100%;
+    resize: none;
+}
+
+.contact-icons{
+    margin-top: 0.5%;
+    display: flex;
+}
+
+.inst-img{
+    margin-left: 50%
+}
