@@ -30,6 +30,7 @@ nav {
 
 .main {
     display: block;
+    height: 100%;
 }
 
 .title-container {
@@ -258,7 +259,7 @@ nav {
     margin-left: auto;
 }
 
-.order span {
+.order p{
     color: #263244;
     font-size: 20px;
     font-weight: bold;
@@ -574,7 +575,8 @@ nav {
 }
 
 .contact-address {
-    width: 30%;
+    width: 20%;
+    margin: auto;
 }
 
 .contact-address span {
@@ -584,7 +586,8 @@ nav {
 }
 
 .contact-email {
-    width: 30%;
+    width: 20%;
+    margin: auto;
 }
 
 .contact-email span {
@@ -594,7 +597,8 @@ nav {
 }
 
 .contact-phone {
-    width: 30%;
+    width: 20%;
+    margin: auto;
 }
 
 .contact-phone span {
