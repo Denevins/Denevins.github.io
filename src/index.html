@@ -9,6 +9,7 @@
     <meta name="robots" content="(no)index (no)follow (all)">
     <meta property="og: title" content="это моя страница">
     <title>MyProject</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -35,24 +36,30 @@
     <!-- main container -->
     <div class="main">
 
+
         <div class="title-container">
-            <h1>Привет<br>Я Данил Денисов</h1>
-            <h4>Фулл стек веб - разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
-            <!-- <button onclick="document.location='url'">about me</button> -->
+            <div class="title-item">
+                <h1>Привет<br>Я Данил Денисов</h1>
+                <h4>Фулл стек веб - разработчик</h4>
+                <input type="submit" value="Обо мне">
+                <input type="submit" value="Мои работы">
+                <!-- <button onclick="document.location='url'">about me</button> -->
+            </div>
         </div>
 
+        <!--about me container-->
         <div class="aboutMe-container">
             <div class="aboutMe-title">
                 <h2>ОБО МНЕ</h2>
             </div>
-            <br> <img src="a" alt="my photo">
+            <br> <img src="../src/img/me.png" alt="my photo">
             <span>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum voluptate harum debitis, voluptatum numquam, nostrum et eligendi rerum. Odio saepe beatae vero. Illum inventore cupiditate saepe sit ea. Incidunt?
-                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus mollitia, quasi sequi omnis nihil nam natus saepe quas sint, distinctio aspernatur sunt sapiente iure inventore vel iusto autem odio corporis.
-                </h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum voluptate harum debitis, voluptatum numquam, nostrum et eligendi rerum. Odio saepe beatae vero. Illum inventore cupiditate saepe sit ea. Incidunt?
             </span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus mollitia, quasi sequi omnis nihil nam natus saepe quas sint, distinctio aspernatur sunt sapiente iure inventore vel iusto autem odio corporis.
+            </span>
+
             <input type="submit" value="Скачать резюме">
         </div>
 
@@ -69,9 +76,7 @@
                 <div class="design">
                     <div class="notebook-icon"><img src="./img/notebook.png" alt="notebook"></div>
                     <div class="design-text">
-                        <span>
-                            <h3>Веб-дизайн</h3>
-                        </span>
+                        <h3>Веб-дизайн</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique consectetur sequi</span>
                     </div>
                 </div>
@@ -80,9 +85,7 @@
                 <div class="develop">
                     <div class="slash-icon"><img src="./img/slash.png" alt="slash"></div>
                     <div class="develop-text">
-                        <span>
-                            <h3>Разработка</h3>
-                        </span>
+                        <h3>Разработка</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum assumenda vero</span>
                     </div>
                 </div>
@@ -91,9 +94,7 @@
                 <div class="ceo">
                     <div class="rocket"><img src="./img/rocket.png" alt="rocket"></div>
                     <div class="ceo-text">
-                        <span>
-                            <h3>CEO-Оптимизация</h3>
-                        </span>
+                        <h3>CEO-Оптимизация</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, at. Itaque quia, similique</span>
                     </div>
                 </div>
@@ -102,9 +103,7 @@
                 <div class="marketing">
                     <div class="megaphone"><img src="./img/megaphone.png" alt="megaphone"></div>
                     <div class="marketing-text">
-                        <span>
-                            <h3>Маркетинг</h3>
-                        </span>
+                        <h3>Маркетинг</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus iusto, quia dignissimos ducimus perferendis</span>
                     </div>
                 </div>
@@ -112,20 +111,19 @@
             </div>
         </div>
 
+
         <!--cases container-->
         <div class="cases">
 
             <!--cases title container-->
             <div class="cases-title">
-                <span>
-                    <h2>КЕЙСЫ</h2>
-                </span>
+                <h2>КЕЙСЫ</h2>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae repudiandae doloremque hic, repellendus magni.</span>
             </div>
 
             <!--site preview-->
             <div class="site-preview">
-                <img class="preview" src="./img/website-preview.png" alt="site">
+                <span> <img class="preview" src="./img/website-preview.jpg" alt="site"></span>
             </div>
 
             <!--about site-->
@@ -133,19 +131,15 @@
                 <div class="about-item-1">
                     <div class="order">
                         <span>
-                            <h4>MY FIRST LANDING PAGE</h4>
+                            <p>MY FIRST LANDING PAGE</p>
+                            <p>WEBSITE</p>
                         </span>
-                        <span>
-                            <h3>WEBSITE</h3>
-                            <a href="https://danil-denisov.netlify.app/">https://danil-denisov</a>
-                        </span>
+                        <a href="https://danil-denisov.netlify.app/">https://danil-denisov</a>
                     </div>
                 </div>
                 <div class="about-item-2">
-                    <span>
-                        <h4>Название проекта</h4>
-                    </span>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nam, aut cum repellendus voluptatum saepe. Sunt rem officiis in, consectetur voluptates, sed doloribus repudiandae qui consequuntur odit harum nesciunt quae!</span>
+                    <h4>Название проекта</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nam, aut cum repellendus voluptatum saepe. Sunt rem officiis in, consectetur voluptates, sed doloribus repudiandae qui consequuntur odit harum nesciunt quae! Molestiae repudiandae doloremque hic, repellendus magni.</span>
                 </div>
             </div>
             <div class="site-button">
@@ -188,20 +182,18 @@
 
                 <!--adaptability container-->
                 <div class="calculator-adaptability">
-                    <p>
-                        <span><b>АДАПТИВНОСТЬ</b></span><br>
-                        <select name="calculator" id="calculator">
-                            <option value="adaptiliby">Выберите пункт...</option>
-                            <option value="a-opt1">Вариант 1</option>
-                            <option value="a-opt2">Вариант 2</option>
-                        </select>
-                    </p>
+                    <span><b>АДАПТИВНОСТЬ</b></span><br>
+                    <select name="calculator" id="calculator">
+                        <option value="adaptiliby">Выберите пункт...</option>
+                        <option value="a-opt1">Вариант 1</option>
+                        <option value="a-opt2">Вариант 2</option>
+                    </select>
                 </div>
 
                 <!--results container-->
                 <div class="calculator-results">
-                    <p>Сроки</p>
-                    <p>Стоимость</p>
+                    <p>Сроки<span>0</span></p>
+                    <p>Стоимость<span>0</span></p>
                 </div>
             </div>
 
@@ -222,25 +214,25 @@
                 <div class="stat-item1">
                     <p><img src="./img/smile-icon.png" alt="smile"></p>
                     <p>120</p>
-                    <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                    <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
                 </div>
 
                 <div class="stat-item2">
                     <p><img src="./img/slash-orange.png" alt="slash"></p>
                     <p>4,600</p>
-                    <p>ЧАСОВ РАБОТЫ</p>
+                    <span>ЧАСОВ РАБОТЫ</span>
                 </div>
 
                 <div class="stat-item3">
                     <p><img src="./img/check-mark.png" alt="check mark"></p>
                     <p>340</p>
-                    <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                    <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
                 </div>
 
                 <div class="stat-item4">
                     <p><img src="./img/cup.png" alt="cup"></p>
                     <p>23</p>
-                    <p>НАГРАД ПОЛУЧЕНО</p>
+                    <span>НАГРАД ПОЛУЧЕНО</span>
                 </div>
             </div>
         </div>
@@ -259,13 +251,13 @@
                 <span class="review-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam alias soluta inventore amet sapiente, perspiciatis quam neque quis perferendis expedita mollitia maxime ad repellendus, aut cupiditate dolores cumque exercitationem dignissimos.
                 </span>
-                <p><b>Михаил</b>, CEO ПАО"Газпром"</p>
+                <span>Михаил, CEO ПАО"Газпром"</span>
             </div>
 
         </div>
 
         <!--contact container-->
-        <div class="contact-form">
+        <div class="contact">
 
             <!--contact title container-->
             <div class="contact-title">
@@ -297,12 +289,14 @@
 
             <!--contact form container-->
             <div class="contact-form">
-                <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+                <h3>Оставьте мне сообщение</h3>
                 <form action="a">
                     <input type="text" name="contact-name" placeholder="Имя">
                     <input type="text" name="contact-email" placeholder="Email"><br>
                     <textarea class="contact-message" name="message" rows="5" id="1" placeholder="Сообщение"></textarea>
-                    <br><input type="submit" value="Отправить">
+                    <span class="submit">
+                        <input type="submit" value="Отправить">
+                    </span>
                 </form>
             </div>
 
@@ -318,11 +312,11 @@
                 </div>
             </div>
         </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7349616324211!2d30.313203215702455!3d59.93653996923048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ab9f1d71d%3A0x11442eb618bdb52f!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDExLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622660569705!5m2!1sru!2sru" width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
-
-    <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7349616324211!2d30.313203215702455!3d59.93653996923048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ab9f1d71d%3A0x11442eb618bdb52f!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDExLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622660569705!5m2!1sru!2sru" width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </footer>
-</body>
-
-</html>
+    <div class="footer">
+        <span>Copyright © 2021 Андрей Браун. Design by Web</span>
+    </div>
+</body></html>
