@@ -11,310 +11,322 @@
     <title>MyProject</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!--    <base target="_blank">-->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/doublecircles.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
 
 <body>
+    <div class="mk-spinner-wrap">
+        <div class="mk-spinner-doublecircle"></div>
+    </div>
+
     <header>
         <nav>
 
             <!-- menu container -->
-            <div class="logo">Danil Denisov</div>
-            <div class="menu">
+            <div class="logo animate__animated animate__flipInX">Danil Denisov</div>
+            <section class="menu">
                 <ul>
-                    <li>ОБО МНЕ</li>
-                    <li>УСЛУГИ</li>
-                    <li>КЕЙСЫ</li>
-                    <li>ПРАЙС</li>
-                    <li>ОТЗЫВЫ</li>
-                    <li>КОНТАКТЫ</li>
+                    <li><a href="#">ОБО МНЕ</a></li>
+                    <li><a href="#">УСЛУГИ</a></li>
+                    <li><a href="#">КЕЙСЫ</a></li>
+                    <li><a href="#">ПРАЙС</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
                 </ul>
-            </div>
+            </section>
 
         </nav>
     </header>
 
     <!-- main container -->
-    <div class="main">
+    <main>
 
 
-        <div class="title-container">
+        <section class="title-container">
             <div class="title-item">
                 <h1>Привет<br>Я Данил Денисов</h1>
                 <h4>Фулл стек веб - разработчик</h4>
-                <input type="submit" value="Обо мне">
-                <input type="submit" value="Мои работы">
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
                 <!-- <button onclick="document.location='url'">about me</button> -->
             </div>
+        </section>
+    </main>
+
+    <!--about me container-->
+    <article class="aboutMe-container">
+        <div class="aboutMe-title">
+            <h2>ОБО МНЕ</h2>
+        </div>
+        <br> <img src="../src/img/me.png" alt="my photo">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum voluptate harum debitis, voluptatum numquam, nostrum et eligendi rerum. Odio saepe beatae vero. Illum inventore cupiditate saepe sit ea. Incidunt?
+        </span>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus mollitia, quasi sequi omnis nihil nam natus saepe quas sint, distinctio aspernatur sunt sapiente iure inventore vel iusto autem odio corporis.
+        </span>
+
+        <input type="button" value="Скачать резюме">
+    </article>
+
+    <!--skills container-->
+    <article class="skills_container">
+        <div class="skills-title">
+            <h2>ЧТО Я УМЕЮ</h2>
         </div>
 
-        <!--about me container-->
-        <div class="aboutMe-container">
-            <div class="aboutMe-title">
-                <h2>ОБО МНЕ</h2>
-            </div>
-            <br> <img src="../src/img/me.png" alt="my photo">
+        <!--skills item container-->
+        <section class="skills-item">
+
+            <!--design container-->
+            <section class="design">
+                <div class="notebook-icon"><img src="./img/notebook.png" alt="notebook"></div>
+                <div class="design-text">
+                    <h3>Веб-дизайн</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique consectetur sequi</span>
+                </div>
+            </section>
+
+            <!--develop container-->
+            <section class="develop">
+                <div class="slash-icon"><img src="./img/slash.png" alt="slash"></div>
+                <div class="develop-text">
+                    <h3>Разработка</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum assumenda vero</span>
+                </div>
+            </section>
+
+            <!--CEO container-->
+            <section class="ceo">
+                <div class="rocket"><img src="./img/rocket.png" alt="rocket"></div>
+                <div class="ceo-text">
+                    <h3>CEO-Оптимизация</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, at. Itaque quia, similique</span>
+                </div>
+            </section>
+
+            <!--marketing container-->
+            <section class="marketing">
+                <div class="megaphone"><img src="./img/megaphone.png" alt="megaphone"></div>
+                <div class="marketing-text">
+                    <h3>Маркетинг</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus iusto, quia dignissimos ducimus perferendis</span>
+                </div>
+            </section>
+
+        </section>
+    </article>
+
+
+    <!--cases container-->
+    <article class="cases">
+
+        <!--cases title container-->
+        <section class="cases-title">
+            <h2>КЕЙСЫ</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae repudiandae doloremque hic, repellendus magni.</span>
+        </section>
+
+        <!--site preview-->
+        <section class="site-preview">
+            <span> <img class="preview" src="./img/website-preview.jpg" alt="site"></span>
+        </section>
+
+        <!--about site-->
+        <section class="about-ws">
+            <section class="about-item-1">
+                <div class="order">
+                    <p>MY FIRST LANDING PAGE</p>
+                    <p>WEBSITE</p>
+                    <a class="link-ws" target="_blank" href="https://danil-denisov.netlify.app/">https://danil-denisov</a>
+                </div>
+            </section>
+            <section class="about-item-2">
+                <h4>Название проекта</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nam, aut cum repellendus voluptatum saepe. Sunt rem officiis in, consectetur voluptates, sed doloribus repudiandae qui consequuntur odit harum nesciunt quae! Molestiae repudiandae doloremque hic, repellendus magni.</span>
+            </section>
+        </section>
+        <div class="site-button">
+            <button onclick="document.location='https://danil-denisov.netlify.app/'">VISIT LIVE SITE</button>
+        </div>
+    </article>
+
+    <!--calculator container-->
+    <article class="calculator">
+
+        <!--calculator title container-->
+        <div class="calculator-title">
+            <h2>Расчет стоимости</h2>
+        </div>
+
+        <!--type container-->
+        <section class="calculator-type">
+            <span><b>ТИП САЙТА</b></span><br>
+            <select name="calculator" id="calculator-type">
+                <option value="type">Выберите пункт...</option>
+                <option value="visit">Сайт визитка</option>
+                <option value="store">Интернет магазин</option>
+            </select>
+        </section>
+
+        <!--design-container-->
+        <section class="calculator-design">
+            <p>
+                <span><b>ДИЗАЙН</b></span><br>
+                <select name="calculator" id="calculator-design">
+                    <option value="design">Выберите пункт...</option>
+                    <option value="d-opt1">вариант 1</option>
+                    <option value="d-opt2">вариант 2</option>
+                </select>
+            </p>
+        </section>
+
+        <!--adaptability container-->
+        <section class="calculator-adaptability">
+            <span><b>АДАПТИВНОСТЬ</b></span><br>
+            <select name="calculator" id="calculator-adapt">
+                <option value="adaptiliby">Выберите пункт...</option>
+                <option value="a-opt1">Вариант 1</option>
+                <option value="a-opt2">Вариант 2</option>
+            </select>
+        </section>
+
+        <!--results container-->
+        <section class="calculator-results">
+            <p>Сроки<span>0</span></p>
+            <p>Стоимость<span>0</span></p>
+        </section>
+
+    </article>
+
+
+    <!--statistics container-->
+    <article class="statistics">
+
+        <!--statistics title container-->
+        <div class="statistics-title">
             <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum voluptate harum debitis, voluptatum numquam, nostrum et eligendi rerum. Odio saepe beatae vero. Illum inventore cupiditate saepe sit ea. Incidunt?
+                <h3>НЕМНОГО СТАТИСТИКИ</h3>
             </span>
-            <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus mollitia, quasi sequi omnis nihil nam natus saepe quas sint, distinctio aspernatur sunt sapiente iure inventore vel iusto autem odio corporis.
+        </div>
+
+        <!--statistics item container-->
+        <section class="statistics-item">
+            <section class="stat-item1">
+                <p><img src="./img/smile-icon.png" alt="smile"></p>
+                <p>120</p>
+                <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+            </section>
+
+            <section class="stat-item2">
+                <p><img src="./img/slash-orange.png" alt="slash"></p>
+                <p>4,600</p>
+                <span>ЧАСОВ РАБОТЫ</span>
+            </section>
+
+            <section class="stat-item3">
+                <p><img src="./img/check-mark.png" alt="check mark"></p>
+                <p>340</p>
+                <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+            </section>
+
+            <section class="stat-item4">
+                <p><img src="./img/cup.png" alt="cup"></p>
+                <p>23</p>
+                <span>НАГРАД ПОЛУЧЕНО</span>
+            </section>
+        </section>
+    </article>
+
+    <!--review container-->
+    <article class="review">
+
+        <!--review title continer-->
+        <div class="review-title">
+            <h2>ОТЗЫВЫ</h2>
+        </div>
+
+        <!--review item container-->
+        <section class="review-item">
+            <p><img src="./img/review-icon.png" alt="icon"></p>
+            <span class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam alias soluta inventore amet sapiente, perspiciatis quam neque quis perferendis expedita mollitia maxime ad repellendus, aut cupiditate dolores cumque exercitationem dignissimos.
             </span>
+            <span>Михаил, CEO ПАО"Газпром"</span>
+        </section>
 
-            <input type="submit" value="Скачать резюме">
+    </article>
+
+    <!--contact container-->
+    <article class="contact">
+
+        <!--contact title container-->
+        <div class="contact-title">
+            <h2>МОИ КОНТАКТЫ</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
 
-        <!--skills container-->
-        <div class="skills_container">
-            <div class="skills-title">
-                <h2>ЧТО Я УМЕЮ</h2>
-            </div>
+        <!--contact item container-->
+        <section class="contact-item">
 
-            <!--skills item container-->
-            <div class="skills-item">
+            <!--address container-->
+            <section class="contact-address">
+                <img src="./img/map-point.png" alt="map mark"><br>
+                <span>Санкт-Петербург<br>Невский проспект 11</span>
+            </section>
 
-                <!--design container-->
-                <div class="design">
-                    <div class="notebook-icon"><img src="./img/notebook.png" alt="notebook"></div>
-                    <div class="design-text">
-                        <h3>Веб-дизайн</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique consectetur sequi</span>
-                    </div>
-                </div>
+            <!--email container-->
+            <section class="contact-email">
+                <img src="./img/email-icon.png" alt="email"><br>
+                <span>denevins385@gmail.com</span>
+            </section>
 
-                <!--develop container-->
-                <div class="develop">
-                    <div class="slash-icon"><img src="./img/slash.png" alt="slash"></div>
-                    <div class="develop-text">
-                        <h3>Разработка</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum assumenda vero</span>
-                    </div>
-                </div>
+            <!--phone container-->
+            <section class="contact-phone">
+                <img src="./img/phone-icon.png" alt="phone"><br>
+                <span>+7 999 999-99-99</span>
+            </section>
+        </section>
 
-                <!--CEO container-->
-                <div class="ceo">
-                    <div class="rocket"><img src="./img/rocket.png" alt="rocket"></div>
-                    <div class="ceo-text">
-                        <h3>CEO-Оптимизация</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, at. Itaque quia, similique</span>
-                    </div>
-                </div>
-
-                <!--marketing container-->
-                <div class="marketing">
-                    <div class="megaphone"><img src="./img/megaphone.png" alt="megaphone"></div>
-                    <div class="marketing-text">
-                        <h3>Маркетинг</h3>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus iusto, quia dignissimos ducimus perferendis</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!--cases container-->
-        <div class="cases">
-
-            <!--cases title container-->
-            <div class="cases-title">
-                <h2>КЕЙСЫ</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae repudiandae doloremque hic, repellendus magni.</span>
-            </div>
-
-            <!--site preview-->
-            <div class="site-preview">
-                <span> <img class="preview" src="./img/website-preview.jpg" alt="site"></span>
-            </div>
-
-            <!--about site-->
-            <div class="about-ws">
-                <div class="about-item-1">
-                    <div class="order">
-                            <p>MY FIRST LANDING PAGE</p>
-                            <p>WEBSITE</p>
-                        <a href="https://danil-denisov.netlify.app/">https://danil-denisov</a>
-                    </div>
-                </div>
-                <div class="about-item-2">
-                    <h4>Название проекта</h4>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nam, aut cum repellendus voluptatum saepe. Sunt rem officiis in, consectetur voluptates, sed doloribus repudiandae qui consequuntur odit harum nesciunt quae! Molestiae repudiandae doloremque hic, repellendus magni.</span>
-                </div>
-            </div>
-            <div class="site-button">
-                <button onclick="document.location='https://danil-denisov.netlify.app/'">VISIT LIVE SITE</button>
-            </div>
-        </div>
-
-        <!--calculator container-->
-        <div class="calculator">
-
-            <!--calculator title container-->
-            <div class="calculator-title">
-                <h2>Расчет стоимости</h2>
-            </div>
-
-            <!--calculator item container-->
-            <div class="calculator-item">
-
-                <!--type container-->
-                <div class="calculator-type">
-                    <span><b>ТИП САЙТА</b></span><br>
-                    <select name="calculator" id="calculator-type">
-                        <option value="type">Выберите пункт...</option>
-                        <option value="visit">Сайт визитка</option>
-                        <option value="store">Интернет магазин</option>
-                    </select>
-                </div>
-
-                <!--design-container-->
-                <div class="calculator-design">
-                    <p>
-                        <span><b>ДИЗАЙН</b></span><br>
-                        <select name="calculator" id="calculator-design">
-                            <option value="design">Выберите пункт...</option>
-                            <option value="d-opt1">вариант 1</option>
-                            <option value="d-opt2">вариант 2</option>
-                        </select>
-                    </p>
-                </div>
-
-                <!--adaptability container-->
-                <div class="calculator-adaptability">
-                    <span><b>АДАПТИВНОСТЬ</b></span><br>
-                    <select name="calculator" id="calculator-adapt">
-                        <option value="adaptiliby">Выберите пункт...</option>
-                        <option value="a-opt1">Вариант 1</option>
-                        <option value="a-opt2">Вариант 2</option>
-                    </select>
-                </div>
-
-                <!--results container-->
-                <div class="calculator-results">
-                    <p>Сроки<span>0</span></p>
-                    <p>Стоимость<span>0</span></p>
-                </div>
-            </div>
-
-        </div>
-
-        <!--statistics container-->
-        <div class="statistics">
-
-            <!--statistics title container-->
-            <div class="statistics-title">
-                <span>
-                    <h3>НЕМНОГО СТАТИСТИКИ</h3>
+        <!--contact form container-->
+        <section class="contact-form">
+            <h3 class="wow animate__animated animate__flash">Оставьте мне сообщение</h3>
+            <form action="a">
+                <input type="text" name="contact-name" placeholder="Имя" required>
+                <input type="email" name="contact-email" placeholder="Email" required><br>
+                <textarea class="contact-message" name="message" rows="5" id="1" placeholder="Сообщение" required></textarea>
+                <span class="cont_button">
+                    <input type="button" value="Отправить">
                 </span>
+            </form>
+        </section>
+
+        <!--contact icons container-->
+        <section class="contact-icons">
+
+            <div class="contact-tg">
+                <a href="https://t.me/danilakage"><img class="tg-img" src="./img/tg-icon.png" alt="telegram"></a>
             </div>
 
-            <!--statistics item container-->
-            <div class="statistics-item">
-                <div class="stat-item1">
-                    <p><img src="./img/smile-icon.png" alt="smile"></p>
-                    <p>120</p>
-                    <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
-                </div>
-
-                <div class="stat-item2">
-                    <p><img src="./img/slash-orange.png" alt="slash"></p>
-                    <p>4,600</p>
-                    <span>ЧАСОВ РАБОТЫ</span>
-                </div>
-
-                <div class="stat-item3">
-                    <p><img src="./img/check-mark.png" alt="check mark"></p>
-                    <p>340</p>
-                    <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
-                </div>
-
-                <div class="stat-item4">
-                    <p><img src="./img/cup.png" alt="cup"></p>
-                    <p>23</p>
-                    <span>НАГРАД ПОЛУЧЕНО</span>
-                </div>
+            <div class="contact-inst">
+                <a href="https://www.instagram.com/legendanila/"><img class="inst-img" src="./img/inst-icon.png" alt="instagram"></a>
             </div>
-        </div>
-
-        <!--review container-->
-        <div class="review">
-
-            <!--review title continer-->
-            <div class="review-title">
-                <h2>ОТЗЫВЫ</h2>
-            </div>
-
-            <!--review item container-->
-            <div class="review-item">
-                <p><img src="./img/review-icon.png" alt="icon"></p>
-                <span class="review-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam alias soluta inventore amet sapiente, perspiciatis quam neque quis perferendis expedita mollitia maxime ad repellendus, aut cupiditate dolores cumque exercitationem dignissimos.
-                </span>
-                <span>Михаил, CEO ПАО"Газпром"</span>
-            </div>
-
-        </div>
-
-        <!--contact container-->
-        <div class="contact">
-
-            <!--contact title container-->
-            <div class="contact-title">
-                <h2>МОИ КОНТАКТЫ</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-            </div>
-
-            <!--contact item container-->
-            <div class="contact-item">
-
-                <!--address container-->
-                <div class="contact-address">
-                    <img src="./img/map-point.png" alt="map mark"><br>
-                    <span>Санкт-Петербург<br>Невский проспект 11</span>
-                </div>
-
-                <!--email container-->
-                <div class="contact-email">
-                    <img src="./img/email-icon.png" alt="email"><br>
-                    <span>denevins385@gmail.com</span>
-                </div>
-
-                <!--phone container-->
-                <div class="contact-phone">
-                    <img src="./img/phone-icon.png" alt="phone"><br>
-                    <span>+7 999 999-99-99</span>
-                </div>
-            </div>
-
-            <!--contact form container-->
-            <div class="contact-form">
-                <h3>Оставьте мне сообщение</h3>
-                <form action="a">
-                    <input type="text" name="contact-name" placeholder="Имя">
-                    <input type="text" name="contact-email" placeholder="Email"><br>
-                    <textarea class="contact-message" name="message" rows="5" id="1" placeholder="Сообщение"></textarea>
-                    <span class="submit">
-                        <input type="submit" value="Отправить">
-                    </span>
-                </form>
-            </div>
-
-            <!--contact icons container-->
-            <div class="contact-icons">
-
-                <div class="contact-tg">
-                    <a href="https://t.me/danilakage"><img class="tg-img" src="./img/tg-icon.png" alt="telegram"></a>
-                </div>
-
-                <div class="contact-inst">
-                    <a href="https://www.instagram.com/legendanila/"><img class="inst-img" src="./img/inst-icon.png" alt="instagram"></a>
-                </div>
-            </div>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7349616324211!2d30.313203215702455!3d59.93653996923048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ab9f1d71d%3A0x11442eb618bdb52f!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDExLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622660569705!5m2!1sru!2sru" width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-    <div class="footer">
+        </section>
+    </article>
+    <article class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7349616324211!2d30.313203215702455!3d59.93653996923048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ab9f1d71d%3A0x11442eb618bdb52f!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDExLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622660569705!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </article>
+    <footer>
         <span>Copyright © 2021 Андрей Браун. Design by Web</span>
-    </div>
+    </footer>
+
 </body></html>
