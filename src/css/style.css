@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.test1 {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
 nav {
     width: 100%;
     height: 60px;
@@ -264,13 +270,17 @@ main {
     text-align: center;
     display: flex;
     margin-top: 100px;
+    opacity: 0;
 }
 
-.skills-item section {
+.skills-item.anim {
     opacity: 0;
     -webkit-animation: skillsitm 1s forwards;
     -o-animation: skillsitm 1s forwards;
     animation: skillsitm 1s forwards;
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes skillsitm {
@@ -481,10 +491,17 @@ main {
     margin: 55px auto 0 auto;
     text-align: left;
     opacity: 0;
+
+}
+
+.calculator section.anim {
+    opacity: 0;
     -webkit-animation: calkit 1s forwards;
     -o-animation: calkit 1s forwards;
     animation: calkit 1s forwards;
-
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes calkit {
@@ -501,15 +518,15 @@ main {
 
 
 .calculator section:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.calculator section:nth-child(4) {
     animation-delay: 0.6s;
 }
 
-.calculator section:nth-child(5) {
+.calculator section:nth-child(4) {
     animation-delay: 0.9s;
+}
+
+.calculator section:nth-child(5) {
+    animation-delay: 1.2s;
 }
 
 
@@ -662,11 +679,18 @@ main {
     color: #323e4f;
 }
 
-.stat-item1,.stat-item3 {
+.stat-item1, .stat-item2, .stat-item3, .stat-item4{
+    opacity: 0;
+}
+
+.stat-item1.anim ,.stat-item3.anim {
     opacity: 0;
     -webkit-animation: statmovebottom 1s forwards;
     -o-animation: statmovebottom 1s forwards;
     animation: statmovebottom 1s forwards;
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes statmovebottom {
@@ -725,7 +749,8 @@ main {
     color: #323e4f;
 }
 
-.stat-item2,.stat-item4 {
+.stat-item2.anim,
+.stat-item4.anim {
     opacity: 0;
     -webkit-animation: statmovetop 1s forwards;
     -o-animation: statmovetop 1s forwards;
@@ -753,11 +778,11 @@ main {
 }
 
 .statistics-item section:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: 0.6s;
 }
 
 .statistics-item section:nth-child(3) {
-    animation-delay: 0.8s;
+    animation-delay: 0.9s;
 }
 
 .statistics-item section:nth-child(4) {
@@ -934,7 +959,7 @@ main {
     color: #243042;
 }
 
-.cont_button input:active{
+.cont_button input:active {
     transform: scale(0.9);
 }
 
@@ -955,11 +980,11 @@ main {
     transition: 0.4s;
 }
 
-.contact-tg img:hover{
+.contact-tg img:hover {
     transform: scale(1.15);
 }
 
-.contact-tg img:active{
+.contact-tg img:active {
     transform: scale(0.9);
 }
 
@@ -974,11 +999,11 @@ main {
     transition: 0.4s;
 }
 
-.contact-inst img:hover{
+.contact-inst img:hover {
     transform: scale(1.15);
 }
 
-.contact-inst img:active{
+.contact-inst img:active {
     transform: scale(0.9);
 }
 
