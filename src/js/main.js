@@ -18,7 +18,7 @@ $(function () {
 });
 
 $(function () {
-    var element = $(".calculator section");
+    var element = $(".calc .row");
     $(window).scroll(function () {
         if ($(window).scrollTop() > 2800) {
             element.addClass("anim");
