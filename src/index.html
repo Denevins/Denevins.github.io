@@ -23,7 +23,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>
         new WOW().init();
-
     </script>
 
 </head>
@@ -411,36 +410,60 @@
                 </div>
             </div>
             <!--   statistics item container -->
-            <section class="statistics-item">
-                <div class="row text-center w-100 justify-content-around pt-5 pb-5 mb-5">
+            <section class="container statistics-item">
+                <div class="row text-center w-100 justify-content-around pt-5">
 
-                    <div class="col-lg-3 stat-item1">
-                        <p><img src="./img/smile-icon.png" alt="smile"></p>
-                        <p>120</p>
-                        <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+                    <div class="col-lg-3 col-sm-4 stat-item1">
+                        <section>
+                            <p><img src="./img/smile-icon.png" alt="smile"></p>
+                            <p>120</p>
+                            <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+                        </section>
                     </div>
 
-                    <div class="col-lg-3">
-                        <section class="stat-item2">
+                    <div class="stat-item2 col-lg-3  col-sm-4">
+                        <section>
                             <p><img src="./img/slash-orange.png" alt="slash"></p>
                             <p>4,600</p>
                             <span>ЧАСОВ РАБОТЫ</span>
                         </section>
                     </div>
 
-                    <div class="col-lg-3 stat-item3">
-                        <p><img src="./img/check-mark.png" alt="check mark"></p>
-                        <p>340</p>
-                        <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+                    <div class="col-lg-3 stat-item3 d-none d-lg-block">
+                        <section>
+                            <p><img src="./img/check-mark.png" alt="check mark"></p>
+                            <p>340</p>
+                            <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+                        </section>
                     </div>
 
-                    <div class="col-lg-3">
-                        <section class="stat-item4">
+                    <div class="stat-item4 col-lg-3 d-none d-lg-block">
+                        <section>
                             <p><img src="./img/cup.png" alt="cup"></p>
                             <p>23</p>
                             <span>НАГРАД ПОЛУЧЕНО</span>
                         </section>
                     </div>
+
+                </div>
+                <div class="row statistics-item text-center w-100 justify-content-around pt-5 pb-5">
+
+                    <div class="stat-item3 col-sm-4 d-lg-none">
+                        <section>
+                            <p><img src="./img/check-mark.png" alt="check mark"></p>
+                            <p>340</p>
+                            <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+                        </section>
+                    </div>
+
+                    <div class="stat-item4 col-sm-4 d-lg-none">
+                        <section>
+                            <p><img src="./img/cup.png" alt="cup"></p>
+                            <p>23</p>
+                            <span>НАГРАД ПОЛУЧЕНО</span>
+                        </section>
+                    </div>
+
                 </div>
             </section>
         </div>
@@ -487,7 +510,7 @@
     <!--contact container-->
     <article id="cnt" class="contact">
         <div class="container">
-           
+
             <div class="row justify-content-center text-center w-100 pt-5">
                 <div class="col-xl-3 col-lg-4 contact-title">
                     <!--contact title container-->
@@ -499,78 +522,76 @@
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,consectetur adipisicing elit.</span>
                 </div>
             </div>
-            
+
             <div class="row contact-item justify-content-between mx-auto text-center mt-5 pt-3">
                 <div class="col-lg-3 col-md-4 col-sm-3 col-3 contact-address">
                     <!--address container-->
-                        <img src="./img/map-point.png" alt="map mark"><br>
-                        <span>Санкт-Петербург<br>Невский проспект 11</span>
+                    <img src="./img/map-point.png" alt="map mark"><br>
+                    <span>Санкт-Петербург<br>Невский проспект 11</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-3 col-3 contact-email">
                     <!--email container-->
-                        <img src="./img/email-icon.png" alt="email"><br>
-                        <span>denevins385@gmail.com</span>
+                    <img src="./img/email-icon.png" alt="email"><br>
+                    <span>denevins385@gmail.com</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-3 col-3 contact-phone">
                     <!--phone container-->
-                        <img src="./img/phone-icon.png" alt="phone"><br>
-                        <span>+7 999 999-99-99</span>
+                    <img src="./img/phone-icon.png" alt="phone"><br>
+                    <span>+7 999 999-99-99</span>
                 </div>
             </div>
-            
+
             <div class="row justify-content-center text-center mt-5 mb-5">
                 <div class="col-lg-4 contact-form">
                     <h3 class="wow animate__animated animate__flash">Оставьте мне сообщение</h3>
                 </div>
             </div>
-            
+
             <form action="a">
-            <div class="row contact-form justify-content-center mx-auto">
-                <div class="col-lg-4 mx-5">
-                    <input type="text" name="contact-name" placeholder="Имя" required>
+                <div class="row contact-form justify-content-center mx-auto">
+                    <div class="col-xl-4 col-lg-5 col-md-12 mx-xl-5 mb-2">
+                        <input type="text" name="contact-name" placeholder="Имя" required>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-12 mx-xl-5">
+                        <input type="email" name="contact-email" placeholder="Email" required>
+                    </div>
+
+                    <div class="row contact-form justify-content-center mt-4">
+                        <div class="col-xl-9 col-lg-10 col-md-12">
+                            <textarea class="contact-message" name="message" rows="5" id="1" placeholder="Сообщение" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-2 cont_button">
+                            <input type="button" value="Отправить">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 mx-5">
-                    <input type="email" name="contact-email" placeholder="Email" required>
+            </form>
+            <div class="row contact-icons justify-content-center text-center mt-3 pb-5">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-2 contact-tg">
+                    <a href="https://t.me/danilakage"><i class="fa fa-telegram" aria-hidden="true"></i></a>
                 </div>
-              
-              <div class="row contact-form justify-content-center mx-5 mt-5">
-                  <div class="col-lg-9">
-                      <textarea class="contact-message" name="message" rows="5" id="1" placeholder="Сообщение" required></textarea>
-                  </div>
-              </div>
-              <div class="row justify-content-center mt-4">
-                  <div class="col-lg-2 cont_button">
-                       <input type="button" value="Отправить">
-                  </div>
-              </div>
+
+                <div class="col-lg-1 col-md-2 col-sm-3 col-2 contact-inst">
+                    <a href="https://www.instagram.com/legendanila/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
             </div>
-              </form>
-              <div class="row contact-icons justify-content-center text-center mt-3 pb-5">
-                  <div class="col-lg-1 col-md-2 col-sm-3 col-2 contact-tg">
-                      <a href="https://t.me/danilakage"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                  </div>
-                  
-                  <div class="col-lg-1 col-md-2 col-sm-3 col-2 contact-inst">
-                       <a href="https://www.instagram.com/legendanila/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                  </div> 
-              </div>
         </div>
     </article>
-    
-     <article class="map">
+
+    <article class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7349616324211!2d30.313203215702455!3d59.93653996923048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ab9f1d71d%3A0x11442eb618bdb52f!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDExLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1622660569705!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </article>
-    
-<footer>
-       <div class="container">
-           <div class="row justify-content-center text-center pt-5 pb-5">                   
-               <div class="col-lg-4">
-               <span>Copyright © 2021 Андрей Браун. Design by Web</span>
-               </div>
-           </div>
-       </div>
-        
-    </footer>
-</body>
 
-</html>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center text-center pt-5 pb-5">
+                <div class="col-lg-4">
+                    <span>Copyright © 2021 Андрей Браун. Design by Web</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body></html>

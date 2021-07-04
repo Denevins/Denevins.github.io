@@ -614,7 +614,6 @@ main {
 
 .statistics-item {
     width: 100%;
-    display: flex;
 }
 
 .stat-item1 p,
@@ -649,9 +648,9 @@ main {
     -webkit-animation: statmovebottom 1s forwards;
     -o-animation: statmovebottom 1s forwards;
     animation: statmovebottom 1s forwards;
-    -webkit-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 @keyframes statmovebottom {
@@ -680,6 +679,9 @@ main {
     -webkit-animation: statmovetop 1s forwards;
     -o-animation: statmovetop 1s forwards;
     animation: statmovetop 1s forwards;
+    -webkit-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 @keyframes statmovetop {
@@ -702,17 +704,91 @@ main {
     }
 }
 
-.statistics-item section:nth-child(2) {
-    animation-delay: 0.6s;
+
+@media(max-width:991px) {
+
+    .stat-item1 p,
+    .stat-item2 p,
+    .stat-item3 p,
+    .stat-item4 p {
+        margin-bottom: 0px;
+    }
+
+    .stat-item1,
+    .stat-item2,
+    .stat-item3,
+    .stat-item4 {
+        margin-bottom: 20px;
+    }
+
+    .stat-item1.anim,
+    .stat-item3.anim {
+        opacity: 0;
+        -webkit-animation: statmoveleft 1s forwards;
+        -o-animation: statmoveleft 1s forwards;
+        animation: statmoveleft 1s forwards;
+        -webkit-animation-delay: 0.5s;
+        -o-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes statmoveleft {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+            margin-left: -80px;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+            margin-left: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+            margin-left: 0;
+        }
+    }
+
+    .stat-item2.anim,
+    .stat-item4.anim {
+        opacity: 0;
+        -webkit-animation: statmoveright 1s forwards;
+        -o-animation: statmoveright 1s forwards;
+        animation: statmoveright 1s forwards;
+        -webkit-animation-delay: 0.5s;
+        -o-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes statmoveright {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+            margin-right: -80px;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+            margin-right: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+            margin-right: 0;
+        }
+    }
+
+    .stat-item3.anim,
+    .stat-item4.anim {
+        animation-delay: 1s;
+    }
 }
 
-.statistics-item section:nth-child(3) {
-    animation-delay: 0.9s;
-}
-
-.statistics-item section:nth-child(4) {
-    animation-delay: 1.2s;
-}
 
 .review {
     width: 100%;
@@ -816,10 +892,6 @@ main {
     margin-top: 10%;
 }
 
-.contact-form {
-    width: 100%;
-
-}
 
 .contact-form h3 {
     font-size: 25px;
@@ -845,6 +917,14 @@ main {
     font-size: 16px;
     font-weight: bold;
 }
+
+@media(max-width:1199px) {
+    .contact-message {
+        width: 103%;
+        margin-left: -1.5%;
+    }
+}
+
 
 .cont_button input {
     display: block;
