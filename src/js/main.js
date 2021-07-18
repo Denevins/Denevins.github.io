@@ -49,7 +49,7 @@ let typeal = [];
 let types = ''
 while (!types.length)
     {
-    types = prompt("Тип сайта:  " +  type);
+    types = prompt("Тип сайта: " + "\n" +  type);
     if (types === null) break;
     }
 if ( !types== null ) arr.push (p);
@@ -59,7 +59,7 @@ let layoutsal = [];
 let layouts = ''
 while (!layouts.length)
     {
-    layouts = prompt('Тип верстки:  ' + layout);
+    layouts = prompt("Тип верстки:  " + "\n" + layout);
     if (layouts === null) break;
     }
 if ( !layouts== null ) arr.push (p);
@@ -69,7 +69,7 @@ let designsal = [];
 let designs = ''
 while (!designs.length)
     {
-    designs = prompt('Дизайн:  ' + design);
+    designs = prompt("Дизайн:  " + "\n" + design);
     if (designs === null) break;
     }
 if ( !designs== null ) arr.push (p);
